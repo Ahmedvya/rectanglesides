@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #0033b3;}
+.s1 { color: #080808;}
+.s2 { color: #067d17;}
+.s3 { color: #1750eb;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner;</span>
+<span class="s0">public class </span><span class="s1">Main {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+       <span class="s1">Scanner input = </span><span class="s0">new </span><span class="s1">Scanner(System.in);</span>
+
+       <span class="s1">System.out.println(</span><span class="s2">&quot;Enter the length of the first side of the rectangle:&quot;</span><span class="s1">);</span>
+       <span class="s0">if </span><span class="s1">(input.hasNextDouble()) {</span>
+           <span class="s0">double </span><span class="s1">side1 = input.nextDouble();</span>
+
+           <span class="s1">System.out.println(</span><span class="s2">&quot;Enter the length of the second side of the rectangle:&quot;</span><span class="s1">);</span>
+           <span class="s0">if </span><span class="s1">(input.hasNextDouble()) {</span>
+               <span class="s0">double </span><span class="s1">side2 = input.nextDouble();</span>
+
+               <span class="s0">double </span><span class="s1">area = side1 * side2;</span>
+               <span class="s0">double </span><span class="s1">perimeter = </span><span class="s3">2 </span><span class="s1">* (side1 + side2);</span>
+               <span class="s0">double </span><span class="s1">diagonal = Math.sqrt(Math.pow(side1, </span><span class="s3">2</span><span class="s1">) + Math.pow(side2, </span><span class="s3">2</span><span class="s1">));</span>
+
+
+               <span class="s1">System.out.println(</span><span class="s2">&quot;Area of the rectangle:&quot; </span><span class="s1">+ area);</span>
+               <span class="s1">System.out.println(</span><span class="s2">&quot;Perimeter of the rectangles:&quot; </span><span class="s1">+ perimeter);</span>
+               <span class="s1">System.out.println(</span><span class="s2">&quot;Length of the diagonal:.&quot; </span><span class="s1">+ diagonal);</span>
+           <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+               <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid input for the second side length.&quot;</span><span class="s1">);</span>
+           <span class="s1">}</span>
+       <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+           <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid input for the first side length.&quot;</span><span class="s1">);</span>
+           <span class="s1">}</span>
+           <span class="s1">input.close();</span>
+           <span class="s1">}</span>
+       <span class="s1">}</span>
+
+</pre>
+</body>
+</html>
